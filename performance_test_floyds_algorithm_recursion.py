@@ -3,12 +3,6 @@ from floyds_algorithm_recursion import floyd
 from floyds_algorithm_geeksforgeeks import floydWarshall
 
 # Test data
-# matrix = [
-#     [0, 5, float('inf'), 10],
-#     [float('inf'), 0, 3, float('inf')],
-#     [float('inf'), float('inf'), 0, 1],
-#     [float('inf'), float('inf'), float('inf'), 0]
-# ]
 
 matrix = [
     [0, 5, 4, 10],
