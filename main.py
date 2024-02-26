@@ -3,8 +3,11 @@ import unittest  # Importing the unittest module
 from input_floyds_algorithm_recursion import get_input  # Importing function to get user input
 from floyds_algorithm_recursion import floyd  # Importing Floyd's algorithm function
 import test_floyds_algorithm_recursion # Importing test module
-#import performance_test_floyds_algorithm_recursion 
+import performance_test_floyds_algorithm_recursion 
+import timeit
 
+# Define num_iterations
+num_iterations = 10000
 
 def print_matrix(matrix):
     """
@@ -46,9 +49,13 @@ def main():
         print("\nAll tests passed successfully.")
 
     # Run performance tests
-    #print("\nRunning performance tests...")
-    #performance_test_floyds_algorithm_recursion.test_floyd()
-    #performance_test_floyds_algorithm_recursion.test_floydWarshall()
+    print("\nRunning performance tests...")
+    time_floyd = timeit.timeit(performance_test_floyds_algorithm_recursion.test_floyd, number=num_iterations)
+    time_floydWarshall = timeit.timeit(performance_test_floyds_algorithm_recursion.test_floydWarshall, number=num_iterations)
+
+    print("Time taken by floyd function:", time_floyd)
+    print("Time taken by floydWarshall function:", time_floydWarshall)
+
 
 # Running the main function if the script is executed directly
 if __name__ == "__main__":

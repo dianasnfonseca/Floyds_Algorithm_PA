@@ -57,7 +57,7 @@ def floydWarshall(graph):
 				dist[i][j] = min(dist[i][j],
 								dist[i][k] + dist[k][j]
 								)
-	printSolution(dist)
+	#printSolution(dist)	## commented out to not print solution everytime
 
 
 # A utility function to print the solution
@@ -72,7 +72,6 @@ between every pair of vertices")
 				print("%7d\t" % (dist[i][j]), end=' ')
 			if j == V-1:
 				print()
-
 
 # Driver's code
 if __name__ == "__main__":
