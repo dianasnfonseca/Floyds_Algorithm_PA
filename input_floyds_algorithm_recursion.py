@@ -1,4 +1,12 @@
 def get_input():
+    """
+    This function prompts the user to input the number of vertices in a graph
+    and the adjacency matrix representing the graph's edges and their weights.
+    
+    Returns:
+    - n: Number of vertices in the graph
+    - matrix: Adjacency matrix representing the graph
+    """
     n = int(input("Enter the number of vertices in the graph: "))
     print("Enter the adjacency matrix row by row.")
     print("Use space-separated integers to represent edges, and 'inf' for absence of an edge.")
