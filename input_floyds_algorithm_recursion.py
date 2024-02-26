@@ -7,10 +7,20 @@ def get_input():
     - n: Number of vertices in the graph
     - matrix: Adjacency matrix representing the graph
     """
-    n = int(input("Enter the number of vertices in the graph: "))
+    print("Floyd's algorithm - recursion")
+    print("\nPlease provide an input as the following, e.g.:")
+    print("  Enter the number of vertices in the graph: 3")
+    print("  Enter the adjacency matrix, row by row:")
+    print("  0 1 3")
+    print("  inf 0 2")
+    print("  inf inf 0")
+    print("\n   We can interpret this distance matrix as the following: ")
+    print("       - Distance between node 0 and node 0 (or any node to itself) is 0")
+    print("       - inf indicates there is no path between nodes")
+    print("       - 0 1 3: means distance 1 between node 0 and 1, distance 3 between node 0 and 2")
+
+    n = int(input("\nEnter the number of vertices in the graph: "))
     print("Enter the adjacency matrix row by row.")
-    print("Use space-separated integers to represent edges, and 'inf' for absence of an edge.")
-    print("For example, if the edge between vertices 1 and 2 has weight 3, and there is no edge between vertices 1 and 3, the input for a 3x3 matrix would be '0 3 inf' on separate lines.")
 
     matrix = []
     for _ in range(n):
