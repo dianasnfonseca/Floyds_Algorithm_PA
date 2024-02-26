@@ -26,12 +26,12 @@ def test_floydWarshall():
     floydWarshall(matrix)
 
 # Measure performance using timeit
-num_iterations = 10000
-time_floyd = timeit.timeit(test_floyd, number=num_iterations)
-time_floydWarshall = timeit.timeit(test_floydWarshall, number=num_iterations)
+# num_iterations = 10000
+# time_floyd = timeit.timeit(test_floyd, number=num_iterations)
+# time_floydWarshall = timeit.timeit(test_floydWarshall, number=num_iterations)
 
-if __name__ == '__main__':
-    # Print the results
-    print("Performance comparison:")
-    print("Your floyd function:", time_floyd)
-    print("Other floydWarshall function:", time_floydWarshall)
+# if __name__ == '__main__':
+#     # Print the results
+#     print("Performance comparison:")
+#     print("Your floyd function:", time_floyd)
+#     print("Other floydWarshall function:", time_floydWarshall)
