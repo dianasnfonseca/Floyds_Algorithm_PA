@@ -52,6 +52,6 @@ class TestFloydAlgorithm(unittest.TestCase):
         self.assertEqual(floyd(matrix3), expected_result3)
 
 
-if __name__ == '__main__':
-    # Running the tests if the script is executed directly
-    unittest.main()
+# if __name__ == '__main__':
+#     # Running the tests if the script is executed directly
+#     unittest.main()
